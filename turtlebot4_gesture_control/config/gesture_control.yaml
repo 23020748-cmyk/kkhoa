@@ -1,0 +1,38 @@
+gesture_recognition_node:
+  ros__parameters:
+    use_sim_time: false
+    camera_source: "0"
+    confidence: 0.65
+    stop_confidence: 0.45
+    rate: 12.0
+    mirror: true
+    show_window: true
+    frame_timeout: 0.45
+    wave_window: 1.8
+    wave_excursion: 0.12
+    wave_reversals: 2
+    wave_min_seconds: 0.45
+    wave_max_gap: 0.25
+    wave_hold_seconds: 0.5
+    wave_max_vertical: 0.18
+
+robot_behavior_node:
+  ros__parameters:
+    use_sim_time: false
+    cmd_vel_topic: "/cmd_vel"
+    linear_speed: 0.08
+    angular_speed: 0.35
+    segment_seconds: 1.5
+    greeting_seconds: 1.0
+    circle_radius: 0.4
+    cycles: 4
+    heartbeat_timeout: 0.7
+    no_hand_timeout: 0.6
+    debounce_seconds: 0.25
+    debounce_frames: 3
+    noise_grace_seconds: 0.15
+    release_seconds: 0.2
+    cooldown_seconds: 0.7
+    max_tick_gap: 0.3
+    confidence: 0.65
+    stop_confidence: 0.45
